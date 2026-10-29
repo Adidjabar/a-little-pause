@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Sebuah ruang kecil untuk berhenti sebentar, menarik napas, dan menemukan hal-hal yang diam-diam menunggu disapa.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌙</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<title>A Little Pause</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/Celebration.css">
+<link rel="stylesheet" href="css/mascot.css">
+</head>
+
+<body>
+<main id="app">
+
+<section id="landing" class="section landing">
+    <div class="landing-noise" aria-hidden="true"></div>
+    <span class="page-moon page-moon-landing" aria-hidden="true">☾</span>
+
+    <div class="ambient-stars">
+        <span class="ambient-star star-01" aria-hidden="true"></span>
+        <span class="ambient-star star-02" aria-hidden="true"></span>
+
+        <!-- EASTER EGG 01 -->
+        <button class="ambient-star star-03 egg-trigger egg-star egg-find" type="button"
+            data-egg-id="01" data-hint="bintang ini kedip-kedip nakal"
+            aria-label="Sesuatu yang tersembunyi di antara bintang">
+            <span aria-hidden="true"></span>
+        </button>
+
+        <span class="ambient-star star-04" aria-hidden="true"></span>
+        <span class="ambient-star star-05" aria-hidden="true"></span>
+        <span class="ambient-star star-06" aria-hidden="true"></span>
+        <span class="ambient-star star-07" aria-hidden="true"></span>
+        <span class="ambient-star star-08" aria-hidden="true"></span>
+        <span class="ambient-star star-09" aria-hidden="true"></span>
+        <span class="ambient-star star-10" aria-hidden="true"></span>
+        <span class="ambient-star star-11" aria-hidden="true"></span>
+        <span class="ambient-star star-12" aria-hidden="true"></span>
+        <span class="ambient-star star-13" aria-hidden="true"></span>
+        <span class="ambient-star star-14" aria-hidden="true"></span>
+
+        <span class="ambient-spark spark-01" aria-hidden="true">✦</span>
+        <span class="ambient-spark spark-02" aria-hidden="true">✧</span>
+        <span class="ambient-spark spark-03" aria-hidden="true">✦</span>
+    </div>
+
+    <div class="landing-line landing-line-top"></div>
+    <div class="landing-line landing-line-bottom"></div>
+
+    <div class="landing-content">
+        <p class="eyebrow landing-eyebrow">SEBUAH RUANG KECIL</p>
+
+        <div class="landing-title-wrapper">
+            <!-- EASTER EGG 02 -->
+            <button class="title-mark egg-trigger egg-find" type="button"
+                data-egg-id="02" data-hint="sentuh aku"
+                aria-label="Ada sesuatu di dekat judul"><span aria-hidden="true">✦</span></button>
+            <h1>A Little Pause</h1>
+        </div>
+
+        <p class="subtitle">
+            Sebentar saja.
+            <br>
+            Dunia bisa menunggu. Notifikasimu juga, mereka sudah terbiasa dicuekin kok.
+        </p>
+
+        <button id="enterButton" class="button enter-button" type="button"
+            aria-label="Masuk ke A Little Pause">
+            <span class="enter-glow" aria-hidden="true"></span>
+            <span class="enter-shine" aria-hidden="true"></span>
+            <span class="button-label">MASUK</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+        </button>
+
+        <p class="landing-whisper">
+            Psst, ada 11 hal kecil yang lagi ngumpet di sini.
+            <br>
+            Kalau ada yang berkilau, sapa saja. Siapa tahu dia cuma menunggu ditanya, “kamu kok sendirian di situ?”
+        </p>
+    </div>
+
+    <div class="landing-footer">
+        <span>dibuat di antara tenggat, kopi yang keburu dingin, dan pikiran yang belum selesai.</span>
+        <span class="scroll-indicator">GESER PELAN, SENTUH YANG BERKILAU</span>
+    </div>
+</section>
+
+<section id="pause" class="section pause">
+    <div class="page-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <span class="page-moon" aria-hidden="true" style="top:8%;right:8%;left:auto;">☾</span>
+
+    <div class="section-content pause-content">
+        <p class="eyebrow">01 / JEDA</p>
+        <h2>Napas dulu, yang lain nanti.</h2>
+
+        <p class="section-lead pause-lead">
+            Tidak ada yang mengejarmu di sini.
+            <br>
+            Kecuali tenggat, tapi tenggat juga perlu tidur.
+        </p>
+
+        <div class="breathing-space">
+            <span class="breathing-particle particle-one"></span>
+            <span class="breathing-particle particle-two"></span>
+            <span class="breathing-particle particle-three"></span>
+
+            <div class="breathing-orbit">
+                <!-- EASTER EGG 03 -->
+                <button class="breathing-core egg-trigger egg-find" type="button"
+                    data-egg-id="03" data-hint="sentuh pusatnya"
+                    aria-label="Sentuh pusat jeda"><span class="egg-orb" aria-hidden="true"></span></button>
+            </div>
+
+            <p class="breathing-label" id="breathingLabel">Breathe in</p>
+            <span class="breathing-hint">ikuti lingkarannya, bukan jam tanganmu</span>
+        </div>
+
+        <p class="poem">
+            Dunia memang jarang mau berhenti berlari.
+            <br>
+            Tapi kamu boleh, kok. Sesekali, jadilah rumah singgah buat dirimu sendiri.
+            <br><br>
+            Satu tarikan napas, segelas kopi,
+            dan beberapa menit tanpa memikirkan apa-apa.
+            <br>
+            Percaya deh, dunia tidak akan roboh cuma karena kamu duduk sebentar.
+            <br><br>
+            Tapi sebelum kembali berlari, coba tanya dirimu pelan,
+            “kamu capek nggak sih, sebenarnya?”
+            <br>
+            lalu kali ini, betul-betul tunggu jawabannya.
+        </p>
+
+        <div class="pause-signature">
+            <span></span>
+            <small>take your time, aku tunggu</small>
+            <span></span>
+        </div>
+    </div>
+</section>
+
+<section id="little-things" class="section little-things">
+    <div class="page-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <span class="page-moon" aria-hidden="true" style="top:auto;bottom:10%;left:6%;right:auto;">☽</span>
+
+    <div class="things-atmosphere" aria-hidden="true">
+        <span class="things-dot dot-01"></span>
+        <span class="things-dot dot-02"></span>
+        <span class="things-dot dot-03"></span>
+        <span class="things-dot dot-04"></span>
+        <span class="things-dot dot-05"></span>
+        <span class="things-dot dot-06"></span>
+    </div>
+
+    <div class="section-content little-things-content">
+        <p class="eyebrow">02 / HAL-HAL KECIL</p>
+        <h2>Yang kecil sering menyelamatkan yang besar.</h2>
+
+        <p class="poem little-things-intro">
+            Hal-hal baik jarang datang sambil membawa pengeras suara.
+            <br><br>
+            Mereka hadir seperti cahaya di sela tirai pagi.
+            Pelan, nyaris tak terasa, tapi tiba-tiba kamarmu
+            terasa seperti tempat yang layak untuk pulang.
+        </p>
+
+        <div class="little-things-note">
+            <span class="note-line"></span>
+            <span>empat hal sederhana.<br>pilih satu, jangan cuma dipandangi kayak menu mahal.</span>
+            <span class="note-line"></span>
+        </div>
+
+        <div class="things-grid">
+            <!-- EASTER EGG 04 -->
+            <button class="thing-card egg-card egg-find-card" type="button"
+                data-title="Kopi"
+                data-description="Untuk ajakan sederhana yang artinya jauh lebih dalam."
+                data-egg-id="04">
+                <span class="thing-index">01</span>
+                <span class="thing-icon">☕</span>
+                <span class="thing-title">Kopi</span>
+                <span class="thing-arrow">↗</span>
+                <span class="thing-description">
+                    “Ngopi yuk” itu kalimat paling pandai menyamar di bahasa kita. Kelihatannya soal kopi, padahal artinya, “aku lagi tidak baik-baik saja, tapi bingung mulai dari mana.” Kopinya cuma figuran. Pemeran utamanya kursi di depanmu.
+                    <br><br>
+                    Jadi kalau ada yang mengajakmu mendadak, duduklah dan dengarkan sampai habis. Tidak semua cerita butuh nasihat, banyak yang cuma butuh telinga. Dan kalau gilirannya kamu yang butuh, ajak saja. Yang mau menemanimu jauh lebih banyak dari dugaanmu, mereka cuma menunggu diminta.
+                    <span class="thing-note"><b>catatan kecil</b>Aturan tak tertulis. Yang bercerita boleh menangis, yang mendengarkan berhak menghabiskan gorengannya.</span>
+                </span>
+            </button>
+
+            <button class="thing-card" type="button"
+                data-title="Musik"
+                data-description="Untuk teman yang tidak pernah bertanya kenapa, cukup menemani.">
+                <span class="thing-index">02</span>
+                <span class="thing-icon">♫</span>
+                <span class="thing-title">Musik</span>
+                <span class="thing-arrow">↗</span>
+                <span class="thing-description">
+                    Lagu itu teman yang tidak pernah bertanya, “kamu kenapa?” Dia cuma duduk di sebelahmu, memutar sesuatu yang pelan, dan membiarkanmu jadi dirimu sendiri. Kadang itu lebih menolong daripada seribu nasihat.
+                    <br><br>
+                    Kalau ada satu lagu yang kamu putar sampai hafal setiap napasnya, itu bukan karena koleksimu kurang. Itu karena di sana ada bagian dirimu yang merasa dimengerti. Spotify tahu semuanya, tapi dia sopan dan baru membongkarnya di akhir tahun. Yang tidak sopan cuma iklannya.
+                    <span class="thing-note"><b>catatan kecil</b>Boleh ikut menyanyi di kamar mandi. Akustiknya bagus, penontonnya cuma sabun.</span>
+                </span>
+            </button>
+
+            <button class="thing-card" type="button"
+                data-title="Istirahat"
+                data-description="Untuk kamu yang sudah berjalan jauh dan cuma butuh duduk sebentar.">
+                <span class="thing-index">03</span>
+                <span class="thing-icon">◌</span>
+                <span class="thing-title">Istirahat</span>
+                <span class="thing-arrow">↗</span>
+                <span class="thing-description">
+                    Capek itu bukan tanda kamu lemah, itu bukti kamu sudah berjalan jauh, dan kakimu cuma jujur soal itu. Orang yang kelihatan paling kuat biasanya cuma orang yang paling lama menahan.
+                    <br><br>
+                    Jadi tidurlah. Kasurmu setia, dia tidak akan bertanya, “kamu ke mana saja?” Dunia juga akan baik-baik saja, percayalah. Dia sudah berputar miliaran tahun sebelum kamu mulai sibuk. Istirahat bukan lawan dari berjuang, itu bagian dari cara bertahan.
+                    <span class="thing-note"><b>catatan kecil</b>Tidur siang sepuluh menit tidak akan menggagalkan hidupmu. Aku sudah mencoba, hasilnya cuma ileran sedikit.</span>
+                </span>
+            </button>
+
+            <button class="thing-card" type="button"
+                data-title="Mencipta"
+                data-description="Untuk karya diam-diam yang masih menunggu keberanianmu.">
+                <span class="thing-index">04</span>
+                <span class="thing-icon">✦</span>
+                <span class="thing-title">Mencipta</span>
+                <span class="thing-arrow">↗</span>
+                <span class="thing-description">
+                    Setiap orang menyimpan sesuatu yang pernah dibuatnya diam-diam. Sebuah tulisan, gambar, rencana, atau sekadar gagasan yang belum berani diceritakan. Jarang ada yang melihatnya, tapi di sanalah keberanianmu tinggal.
+                    <br><br>
+                    Mencipta itu cara tangan mengatakan apa yang mulut belum sanggup. Jadi kalau hasilnya belum sempurna, tidak apa-apa. Itu cuma terjemahan pertama dari perasaan yang sedang belajar bicara.
+                    <span class="thing-note"><b>catatan kecil</b>Karya pertamamu boleh jelek. Boleh banget. Aku pernah menggambar kucing, kata temanku lebih mirip kentang berkumis. Tapi kentangnya kelihatan bahagia.</span>
+                </span>
+            </button>
+        </div>
+
+        <p class="little-things-footnote">
+            Kadang kita tidak butuh sesuatu yang baru.
+            <br>
+            Kita cuma butuh cara untuk kembali merasakan
+            hal-hal yang diam-diam sudah lama kita lewati.
+            <br>
+            Dan kalau rasanya sudah kembali, ada kanvas kecil di bawah untuk menyimpannya.
+        </p>
+
+        <!-- EASTER EGG 05 -->
+        <button class="little-things-secret egg-trigger egg-find" type="button"
+            data-egg-id="05" data-hint="titik kecil sok misterius"
+            aria-label="Ada sesuatu di balik hal-hal kecil">
+            <span aria-hidden="true">·</span>
+        </button>
+    </div>
+</section>
+
+<section id="canvas-section" class="section canvas-section">
+    <div class="page-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+    <div class="section-content canvas-content">
+        <p class="eyebrow">03 / JEJAK KECIL</p>
+        <h2>Tinggalkan jejakmu, sekecil apa pun.</h2>
+
+        <p class="poem canvas-intro">
+            Tidak semua karya harus besar.
+            <br><br>
+            Kadang satu bentuk, sedikit ruang kosong, dan satu keputusan kecil
+            sudah cukup untuk bilang,
+            <br>
+            <em>“aku pernah singgah di sini.”</em>
+            <br><br>
+            Membuat sesuatu cuma karena ingin, bukan karena disuruh,
+            adalah kemewahan kecil yang sering kita lupa.
+        </p>
+
+        <div class="canvas-intro-mark">
+            <span></span>
+            <span>sepetak kecil milikmu</span>
+            <span></span>
+        </div>
+
+        <div class="canvas-workspace">
+            <div class="canvas-stage-wrapper">
+                <canvas id="creativeCanvas" width="800" height="500"
+                    aria-label="Ruang untuk membuat komposisi kecil"></canvas>
+            </div>
+
+            <div class="canvas-controls">
+                <div class="control-group">
+                    <span class="control-label">LATAR</span>
+                    <div class="control-buttons">
+                        <button class="canvas-control" type="button" data-background="#0b0b0b"><span class="color-dot dark"></span>Gelap</button>
+                        <button class="canvas-control" type="button" data-background="#e9e6df"><span class="color-dot light"></span>Terang</button>
+                        <button class="canvas-control" type="button" data-background="#b7a58a"><span class="color-dot warm"></span>Hangat</button>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <span class="control-label">TAMBAHKAN</span>
+                    <div class="control-buttons">
+                        <button id="addText" class="canvas-control" type="button">+ Teks</button>
+                        <button id="addCircle" class="canvas-control" type="button">+ Lingkaran</button>
+                        <button id="addSquare" class="canvas-control" type="button">+ Kotak</button>
+                    </div>
+                </div>
+
+                <div class="control-group canvas-plus" data-canvas-plus style="display:none">
+                    <span class="control-label">LEBIH BANYAK</span>
+                    <div class="control-buttons">
+                        <button id="addMoon" class="canvas-control" type="button">+ Bulan</button>
+                        <button id="addStar" class="canvas-control" type="button">+ Bintang</button>
+                        <button id="addLine" class="canvas-control" type="button">+ Garis</button>
+                        <button id="toggleBrush" class="canvas-control" type="button" aria-pressed="false">Coret bebas</button>
+                    </div>
+                </div>
+
+                <div class="control-group canvas-plus" data-canvas-plus style="display:none">
+                    <span class="control-label">LATAR SENJA</span>
+                    <div class="control-buttons">
+                        <button class="canvas-control" type="button" data-gradient="senja">Senja</button>
+                        <button class="canvas-control" type="button" data-gradient="malam">Malam bertabur bintang</button>
+                        <button class="canvas-control" type="button" data-gradient="fajar">Fajar</button>
+                    </div>
+                </div>
+
+                <div class="control-group canvas-actions">
+                    <button id="undoCanvas" class="canvas-action canvas-plus" type="button" style="display:none">Urungkan</button>
+                    <button id="randomizeCanvas" class="canvas-action" type="button">Acak</button>
+                    <button id="clearCanvas" class="canvas-action" type="button">Hapus</button>
+                    <button id="saveCanvas" class="canvas-action primary" type="button">Simpan PNG →</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="canvas-hint">
+            Geser untuk memindah · putar dengan scroll · bikin sesuatu yang, sebentar ini, cuma milikmu
+        </p>
+
+        <p class="canvas-afterthought">
+            Kalau hasilnya sederhana, tidak apa-apa.
+            <br>
+            Tidak semua karya lahir untuk dipamerkan, ada yang lahir cuma supaya kamu bisa bernapas lega.
+            <br>
+            Kalau hasilnya mirip lukisan anak TK, itu tanda kamu sedang bersenang-senang.
+            <br>
+            Kalau sudah, turunlah pelan-pelan. Ada ruang yang lebih tenang di bawah.
+        </p>
+
+        <!-- EASTER EGG 06 -->
+        <button class="canvas-secret egg-trigger egg-find" type="button"
+            data-egg-id="06" data-hint="ruang kosong, katanya"
+            aria-label="Ada sesuatu di ruang kosong ini">
+            <span aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 1.5C12.9 7.6 16.4 11.1 22.5 12C16.4 12.9 12.9 16.4 12 22.5C11.1 16.4 7.6 12.9 1.5 12C7.6 11.1 11.1 7.6 12 1.5Z"/><circle class="egg-core" cx="12" cy="12" r="1.7"/></svg></span>
+        </button>
+
+        <!-- EASTER EGG 07 -->
+        <button class="canvas-secret canvas-secret-secondary egg-trigger egg-find" type="button"
+            data-egg-id="07" data-hint="sabit kecil yang malu-malu"
+            aria-label="Sesuatu yang tersembunyi di sekitar jejak kecil">
+            <span aria-hidden="true">☾</span>
+        </button>
+    </div>
+</section>
+
+<section id="hidden-note" class="section hidden-note">
+    <div class="page-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <span class="page-moon" aria-hidden="true">☾</span>
+
+    <div class="section-content hidden-note-content">
+        <p class="eyebrow">04 / SESUATU YANG TENANG</p>
+        <h2 class="hidden-section-title">Tenang itu bukan berarti semuanya sudah beres.</h2>
+
+        <p class="hidden-section-intro">
+            Tenang adalah keputusan kecil untuk berhenti berdebat dengan diri sendiri, walau cuma satu menit.
+            Kepala kita memang mirip grup WhatsApp yang lupa di-mute, jadi wajar kalau butuh waktu untuk sepi.
+        </p>
+
+        <p class="hidden-note-verse">
+            Tidak semua masalah harus ditaklukkan hari ini. Sebagian cukup ditemani, sampai mereka lelah sendiri.
+            <br>
+            Ada hal yang baru terlihat jelas setelah kamu berhenti mencarinya.
+            <br>
+            Dan kalau belum ada jawaban hari ini, tidak apa-apa. Beberapa jawaban memang kayak teman yang bilang “bentar ya, lima menit lagi”, lalu muncul tiga jam kemudian dengan wajah tanpa dosa.
+        </p>
+
+        <!-- EASTER EGG 08 -->
+        <div class="hidden-trigger-wrapper">
+            <span class="hidden-note-aura" aria-hidden="true"></span>
+            <span class="hidden-note-motes" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <button id="hiddenTrigger" class="hidden-trigger egg-trigger egg-find" type="button"
+                data-egg-id="08" data-hint="coba lihat lebih dekat"
+                aria-label="Temukan sesuatu yang tersembunyi" aria-expanded="false"><span aria-hidden="true">✦</span></button>
+            <span class="hidden-trigger-hint">mendekatlah, dia tidak menggigit</span>
+        </div>
+
+        <!-- legacy: jangan dihapus -->
+        <div id="hiddenMessage" class="hidden-message" aria-live="polite">
+            <p id="hiddenMessageSmall" class="hidden-message-small">Kamu menemukannya.</p>
+            <h2 id="hiddenMessageTitle">Oh, jadi kamu memang penasaran.</h2>
+            <p id="hiddenMessagePoem" class="poem">
+                Ada hal yang sengaja tidak diletakkan di tengah halaman.
+                <br><br>
+                Bukan karena tidak berarti, tapi karena sebagian keindahan
+                lebih cocok ditemukan pelan-pelan.
+            </p>
+            <p id="hiddenMessageFinal" class="hidden-message-final">
+                Mungkin jeda kecil ini memang layak ditemukan.
+            </p>
+        </div>
+
+        <!-- EASTER EGG 09 -->
+        <button class="hidden-note-secret egg-trigger egg-find" type="button"
+            data-egg-id="09" data-hint="ada yang gugup di sini"
+            aria-label="Ada sesuatu di sekitar catatan tersembunyi">
+            <span aria-hidden="true">♡</span>
+        </button>
+
+        <div class="hidden-note-footer">
+            <span></span>
+            <small>ada hal yang lebih indah kalau ditemukan sendiri, tanpa spoiler</small>
+            <span></span>
+        </div>
+    </div>
+</section>
+
+<section id="ending" class="section ending">
+    <div class="page-stars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <span class="page-moon" aria-hidden="true" style="top:8%;left:6%;right:auto;">☾</span>
+    <div class="ending-glow"></div>
+
+    <div class="section-content ending-content">
+        <p class="eyebrow">05 / SEBELUM PERGI</p>
+        <div class="ending-line"></div>
+
+        <p class="ending-pretitle">Sampai sini dulu, ya.</p>
+
+        <h2>Terima kasih<br>sudah memberi dirimu sedikit waktu.</h2>
+
+        <p class="ending-text">
+            Semoga setelah ini langkahmu terasa sedikit lebih ringan.
+            Syukur-syukur sampai senyum-senyum sendiri, dan orang di sebelahmu mulai curiga.
+            <br><br>
+            Kalau hari ini belum ada yang selesai, tidak apa-apa.
+            <br>
+            Tugas akan tetap menunggu besok, tapi hari ini cuma datang sekali.
+            Beberapa hal memang tumbuh paling indah saat tidak dikejar.
+            Termasuk cerita ini. Termasuk kamu.
+            <br><br>
+            Oh ya, sebelum pergi, kasih dirimu satu tepuk tangan kecil.
+            <br>
+            Tidak perlu penonton, tidak perlu tiket. Plok plok plok.
+        </p>
+
+        <div class="ending-divider"></div>
+
+        <div class="ending-closing">
+            <!-- EASTER EGG 10 -->
+            <button class="closing-mark egg-trigger egg-find" type="button"
+                data-egg-id="10" data-hint="satu pertanyaan tertahan"
+                aria-label="Satu hal terakhir sebelum pergi"><span aria-hidden="true">✦</span></button>
+
+            <p>
+                Dan kalau suatu hari kamu menemukan sesuatu yang kecil,
+                entah lagu, senja, atau sapaan dari seseorang,
+                <br>
+                jangan buru-buru berlalu. Bisa jadi dia sedang menunggumu, sambil pura-pura sibuk.
+            </p>
+
+            <span class="closing-mark" aria-hidden="true">✦</span>
+        </div>
+
+        <div class="credits">
+            <span>A Little Pause</span>
+            <small>sebuah karya kecil dari kepala yang lumayan berisik · chapter 1</small>
+            <!-- EASTER EGG 11 -->
+            <strong class="egg-trigger egg-name egg-find" role="button" tabindex="0"
+                data-egg-id="11" data-hint="satu hal terakhir"
+                aria-label="Satu hal terakhir di balik sebuah nama"><bdi class="egg-skin">W.Adidjabar</bdi></strong>
+            <small>© 2026 · bersambung di jeda berikutnya (kalau kopinya cukup)</small>
+
+            <div class="social-links" style="display:flex;justify-content:center;">
+                <a class="social-link" href="https://www.instagram.com/d.jabrr/?utm_source=ig_web_button_share_sheet"
+                    target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <circle cx="17.2" cy="6.8" r="0.6" fill="currentColor"></circle>
+                    </svg>
+                </a>
+            </div>
+
+        <div id="celebrationGate" class="celebration-gate" hidden>
+            <span class="gate-rays" aria-hidden="true"></span>
+            <span class="gate-sparks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+
+            <p id="gateEyebrow" class="gate-eyebrow">SEBUAH PERAYAAN KECIL</p>
+            <p class="gate-line">
+                Panggung sudah disapu dan lampu sudah dipanaskan.
+                <br>
+                Sekarang tinggal menunggu satu orang, yaitu kamu.
+            </p>
+
+            <div class="gate-name">
+                <label class="gate-name-label" for="celebrationName">
+                    Satpam panggung ingin tahu dulu, “siapa nama panggilanmu?”
+                </label>
+                <div id="gateNameField" class="gate-name-field">
+                    <span class="gate-name-icon" aria-hidden="true">✦</span>
+                    <input id="celebrationName" class="gate-name-input" type="text"
+                        maxlength="24" autocomplete="off" autocapitalize="words"
+                        spellcheck="false" enterkeyhint="go"
+                        placeholder="ketik namamu di sini" aria-describedby="gateNameHint">
+                </div>
+                <p id="gateNameHint" class="gate-name-hint" aria-live="polite">Gemboknya cuma mau dibuka pakai namamu.</p>
+            </div>
+
+            <button id="celebrationOpen" class="gate-button is-locked" type="button" data-celeb-open
+                aria-haspopup="dialog" aria-controls="celebration" aria-disabled="true">
+                <span class="gate-glow" aria-hidden="true"></span>
+                <span class="gate-shine" aria-hidden="true"></span>
+                <svg class="gate-lock" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                    <rect x="5" y="11" width="14" height="9.5" rx="2.4"></rect>
+                    <path d="M8.2 11V8.2a3.8 3.8 0 0 1 7.6 0V11"></path>
+                </svg>
+                <span class="gate-star" aria-hidden="true">✦</span>
+                <span class="gate-label">MASUK KE PERAYAAN</span>
+                <span class="gate-star" aria-hidden="true">✦</span>
+            </button>
+
+            <small id="gateTease" class="gate-tiny">tombolnya digembok sampai namamu terisi</small>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<div id="musicDock" class="music-dock">
+    <span id="musicBubble" class="music-bubble" aria-hidden="true"></span>
+    <button id="musicToggle" class="music-toggle" type="button" data-state="off"
+        aria-pressed="false" aria-label="Putar musik">
+        <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true" focusable="false">
+            <defs>
+                <mask id="mtCut">
+                    <rect width="48" height="48" fill="#fff"></rect>
+                    <circle cx="31" cy="19" r="11.5" fill="#000"></circle>
+                </mask>
+            </defs>
+            <circle class="mt-halo" cx="21" cy="27" r="19"></circle>
+            <circle class="mt-moon" cx="21" cy="27" r="14" mask="url(#mtCut)"></circle>
+            <path class="mt-star" d="M33 11 L34.6 15.4 L39 17 L34.6 18.6 L33 23 L31.4 18.6 L27 17 L31.4 15.4 Z"></path>
+            <circle class="mt-dot mt-dot-a" cx="40.5" cy="27" r="1"></circle>
+            <circle class="mt-dot mt-dot-b" cx="30" cy="43" r="0.9"></circle>
+        </svg>
+    </button>
+</div>
+
+<div id="eggOverlay" class="egg-overlay" aria-hidden="true">
+    <div class="egg-backdrop" data-egg-close></div>
+
+    <article id="eggCard" class="egg-card-modal" role="dialog" aria-modal="true"
+        aria-labelledby="eggTitle" aria-describedby="eggPoem">
+        <button id="eggClose" class="egg-close" type="button" aria-label="Tutup pesan">×</button>
+
+        <p id="eggSmall" class="egg-small">Kamu menemukan sesuatu.</p>
+        <h2 id="eggTitle">Sesuatu yang tidak sengaja ditemukan.</h2>
+        <p id="eggPoem" class="egg-poem">Kadang hal-hal kecil memang datang tanpa suara.</p>
+        <p id="eggFinal" class="egg-final">Tidak semuanya perlu segera diberi nama.</p>
+
+        <div class="egg-footer">
+            <span></span>
+            <button id="eggNext" class="egg-next" type="button">buka pesannya →</button>
+            <span></span>
+        </div>
+    </article>
+</div>
+
+<div id="celebration" class="celebration" role="dialog" aria-modal="true"
+    aria-label="Halaman perayaan" aria-hidden="true">
+
+    <div class="cel-sky" aria-hidden="true"></div>
+    <canvas id="celBg" class="cel-canvas" aria-hidden="true"></canvas>
+
+    <div class="cel-beams" aria-hidden="true">
+        <i class="beam" style="--x:6%;--c:rgba(255,196,110,.85);--a0:-6deg;--a1:38deg;--dur:9s;--del:-2s"></i>
+        <i class="beam" style="--x:20%;--c:rgba(255,120,190,.8);--a0:-30deg;--a1:22deg;--dur:11s;--del:-5s"></i>
+        <i class="beam" style="--x:36%;--c:rgba(124,226,255,.75);--a0:-18deg;--a1:30deg;--dur:8s;--del:-1s"></i>
+        <i class="beam" style="--x:50%;--c:rgba(255,236,190,.8);--a0:-14deg;--a1:14deg;--dur:12s;--del:-6s"></i>
+        <i class="beam" style="--x:64%;--c:rgba(182,156,255,.8);--a0:-30deg;--a1:18deg;--dur:8.5s;--del:-3s"></i>
+        <i class="beam" style="--x:80%;--c:rgba(255,150,120,.8);--a0:-22deg;--a1:28deg;--dur:10.5s;--del:-7s"></i>
+        <i class="beam" style="--x:94%;--c:rgba(150,255,200,.7);--a0:-38deg;--a1:6deg;--dur:9.5s;--del:-4s"></i>
+    </div>
+
+    <div class="cel-moon" aria-hidden="true">
+        <svg viewBox="0 0 200 200" focusable="false">
+            <defs>
+                <mask id="celMoonCut">
+                    <rect width="200" height="200" fill="#fff"></rect>
+                    <circle cx="132" cy="82" r="65" fill="#000"></circle>
+                </mask>
+                <radialGradient id="celMoonFill" cx="30%" cy="38%" r="80%">
+                    <stop offset="0" stop-color="#fffaf0"></stop>
+                    <stop offset=".55" stop-color="#ffe6b0"></stop>
+                    <stop offset="1" stop-color="#f2b866"></stop>
+                </radialGradient>
+            </defs>
+            <circle cx="92" cy="108" r="66" fill="url(#celMoonFill)" mask="url(#celMoonCut)"></circle>
+            <path class="cel-spark s1" d="M168 44 L172 57 L185 61 L172 65 L168 78 L164 65 L151 61 L164 57 Z"></path>
+            <path class="cel-spark s2" d="M148 142 L150.6 149.4 L158 152 L150.6 154.6 L148 162 L145.4 154.6 L138 152 L145.4 149.4 Z"></path>
+            <path class="cel-spark s3" d="M188 104 L189.8 109.2 L195 111 L189.8 112.8 L188 118 L186.2 112.8 L181 111 L186.2 109.2 Z"></path>
+        </svg>
+    </div>
+
+    <canvas id="celFx" class="cel-canvas" aria-hidden="true"></canvas>
+    <div class="cel-floor" aria-hidden="true"></div>
+    <div class="cel-haze" aria-hidden="true"></div>
+    <div class="cel-flash" aria-hidden="true"></div>
+
+    <div class="cel-content">
+        <header class="cel-head">
+            <p class="cel-eyebrow">PERAYAAN · PANGGUNG KECIL</p>
+            <h2 id="celTitle" class="cel-title">Selamat, Bulan.</h2>
+            <p class="cel-sub">Malam ini panggung ini hanya punya satu bintang, dan itu kamu.</p>
+        </header>
+
+        <div class="cel-lyrics">
+            <div id="celLyrics" class="cel-lyric-stage" aria-live="off"></div>
+        </div>
+
+        <p class="cel-note">
+            <span class="cel-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <span id="celSong">Lagu Perayaan</span>
+        </p>
+    </div>
+
+    <div class="cel-curtain cel-curtain-l" aria-hidden="true"></div>
+    <div class="cel-curtain cel-curtain-r" aria-hidden="true"></div>
+    <div id="celIntro" class="cel-intro" aria-hidden="true">
+        <p>sebentar lagi, tirainya dibuka</p>
+        <span id="celCount"></span>
+    </div>
+
+    <button id="celClose" class="cel-close" type="button" aria-label="Tutup perayaan">×</button>
+
+    <div class="cel-bar">
+        <button id="celSound" class="cel-btn" type="button" aria-pressed="true">
+            <span aria-hidden="true">♪</span><b id="celSoundLabel">SUARA NYALA</b>
+        </button>
+        <button id="celBurst" class="cel-btn" type="button">
+            <span aria-hidden="true">✦</span><b>KEMBANG API</b>
+        </button>
+    </div>
+
+    <!-- alat sinkron lirik: buka index.html?sync -->
+    <div id="celSync" class="cel-sync" hidden>
+        <p class="cel-sync-title">MODE SINKRON LIRIK</p>
+        <p id="celSyncInfo" class="cel-sync-info"></p>
+        <div class="cel-sync-row">
+            <button id="celSyncTap" type="button">TAP · saat dinyanyikan</button>
+            <button id="celSyncUndo" type="button">Undo</button>
+            <button id="celSyncCopy" type="button">Salin</button>
+        </div>
+    </div>
+</div>
+
+<!-- opsional (confetti lebih meriah): <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script> -->
+<script src="js/main.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/easter-egg.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/Celebration.js"></script>
+<script src="js/landing-stars.js"></script>
+<script src="js/mascot.js"></script>
+
+</body>
+</html>

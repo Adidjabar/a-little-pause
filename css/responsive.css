@@ -1,0 +1,3318 @@
+@media (min-width: 1400px) {
+
+    .section-content {
+
+        width:
+            min(
+                calc(100% - 120px),
+                1240px
+            );
+
+    }
+
+    .landing-content {
+
+        width:
+            min(
+                calc(100% - 120px),
+                1050px
+            );
+
+    }
+
+    .landing h1 {
+
+        font-size:
+            clamp(
+                120px,
+                12vw,
+                180px
+            );
+
+    }
+
+    .pause-content,
+    .hidden-note-content {
+
+        max-width:
+            1000px;
+
+    }
+
+    .canvas-content,
+    .little-things-content {
+
+        max-width:
+            1240px;
+
+    }
+
+    .things-grid {
+
+        gap:
+            1px;
+
+    }
+
+    .thing-card {
+
+        min-height:
+            350px;
+
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .section-content {
+
+        width:
+            calc(100% - 64px);
+
+    }
+
+    .landing-content {
+
+        width:
+            calc(100% - 64px);
+
+    }
+
+    .landing h1 {
+
+        font-size:
+            clamp(
+                80px,
+                13vw,
+                145px
+            );
+
+    }
+
+    .things-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+    }
+
+    .thing-card {
+
+        min-height:
+            310px;
+
+    }
+
+    .canvas-controls {
+
+        align-items:
+            flex-start;
+
+    }
+
+    .control-group {
+
+        max-width:
+            100%;
+
+    }
+
+    .canvas-workspace {
+
+        width:
+            100%;
+
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .section-content {
+
+        width:
+            calc(100% - 48px);
+
+    }
+
+    .landing-content {
+
+        width:
+            calc(100% - 48px);
+
+    }
+
+    .landing::before {
+
+        inset:
+            20px;
+
+    }
+
+    .landing-footer {
+
+        left:
+            26px;
+
+        right:
+            26px;
+
+    }
+
+    .things-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+    }
+
+    .thing-card {
+
+        min-height:
+            280px;
+
+    }
+
+    .thing-icon {
+
+        margin-top:
+            46px;
+
+    }
+
+    .thing-description {
+
+        opacity:
+            1;
+
+        transform:
+            none;
+
+    }
+
+    .canvas-controls {
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+    }
+
+    .canvas-actions {
+
+        width:
+            100%;
+
+    }
+
+    /* jangan batasi modal berdasarkan lebar desktop */
+
+    .egg-card-modal {
+
+        width:
+            min(
+                calc(100% - 48px),
+                620px
+            );
+
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .section-content {
+
+        width:
+            calc(100% - 36px);
+
+    }
+
+    .eyebrow {
+
+        margin-bottom:
+            18px;
+
+        font-size:
+            9px;
+
+        letter-spacing:
+            0.22em;
+
+    }
+
+    h2 {
+
+        font-size:
+            clamp(
+                48px,
+                14vw,
+                76px
+            );
+
+        line-height:
+            0.9;
+
+    }
+
+    .poem {
+
+        font-size:
+            18px;
+
+        line-height:
+            1.48;
+
+    }
+
+    .landing {
+
+        min-height:
+            100svh;
+
+    }
+
+    .landing::before {
+
+        inset:
+            13px;
+
+    }
+
+    /* dulu height dipaksa 20vh sehingga muncul kotak gradien bertepi tegas; sekarang cahaya lembut yang memudar ke transparan di semua sisi */
+    .landing::after {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 26vh;
+        transform: none;
+        background: radial-gradient(
+            ellipse 62% 100% at 50% 100%,
+            rgba(183, 165, 138, 0.055) 0%,
+            rgba(183, 165, 138, 0.028) 38%,
+            transparent 100%
+        );
+    }
+
+    .landing-line {
+
+        height:
+            13vh;
+
+    }
+
+    /* garis tipis dipindah ke sudut; left: 50% bawaan desktop sebelumnya masih aktif sehingga garis menembus tulisan footer */
+    .landing-line-top {
+        left: 7%;
+        transform: none;
+    }
+
+    .landing-line-bottom {
+        left: auto;
+        right: 7%;
+        transform: none;
+    }
+
+    .landing-content {
+
+        width:
+            calc(100% - 34px);
+
+    }
+
+    .landing-eyebrow {
+
+        margin-bottom:
+            22px;
+
+        font-size:
+            8px;
+
+    }
+
+    .landing h1 {
+
+        font-size:
+            clamp(
+                61px,
+                17.5vw,
+                94px
+            );
+
+        letter-spacing:
+            -0.06em;
+
+    }
+
+    /* title mark sekarang BUTTON; reset posisi sama seperti desain awal */
+
+    .title-mark {
+
+        top:
+            -21px;
+
+        right:
+            -22px;
+
+        width:
+            24px;
+
+        height:
+            24px;
+
+        padding:
+            0;
+
+        font-size:
+            10px;
+
+    }
+
+    .subtitle {
+
+        margin-top:
+            29px;
+
+        font-size:
+            17px;
+
+        line-height:
+            1.4;
+
+    }
+
+    .enter-button {
+
+        margin-top:
+            39px;
+
+    }
+
+    .landing-whisper {
+
+        margin-top:
+            28px;
+
+        font-size:
+            12px;
+
+    }
+
+    .landing-footer {
+
+        left:
+            17px;
+
+        right:
+            17px;
+
+        bottom:
+            17px;
+
+        font-size:
+            6.5px;
+
+        letter-spacing:
+            0.1em;
+
+    }
+
+    .landing-footer > span:first-child {
+
+        max-width:
+            160px;
+
+    }
+
+    .scroll-indicator {
+
+        max-width:
+            110px;
+
+    }
+
+    .ambient-star {
+
+        width:
+            2px;
+
+        height:
+            2px;
+
+    }
+
+    /* easter egg star harus tetap bisa disentuh */
+
+    .ambient-star.egg-star {
+
+        width:
+            18px;
+
+        height:
+            18px;
+
+        margin:
+            -8px;
+
+    }
+
+    .pause {
+
+        min-height:
+            105svh;
+
+    }
+
+    .pause-content {
+
+        padding-top:
+            7vh;
+
+        padding-bottom:
+            7vh;
+
+    }
+
+    .pause-content h2 {
+
+        margin-bottom:
+            22px;
+
+    }
+
+    .pause-lead {
+
+        font-size:
+            17px;
+
+    }
+
+    .breathing-space {
+
+        width:
+            210px;
+
+        height:
+            210px;
+
+        margin-top:
+            55px;
+
+        margin-bottom:
+            58px;
+
+    }
+
+    .breathing-orbit {
+
+        width:
+            138px;
+
+        height:
+            138px;
+
+    }
+
+    .breathing-orbit::before {
+
+        inset:
+            -15px;
+
+    }
+
+    .breathing-orbit::after {
+
+        inset:
+            20px;
+
+    }
+
+    /* core adalah button; ukuran touch target tetap cukup besar */
+
+    .breathing-core {
+
+        width:
+            58px;
+
+        height:
+            58px;
+
+        min-width:
+            58px;
+
+        min-height:
+            58px;
+
+        padding:
+            0;
+
+    }
+
+    .breathing-label {
+
+        transform:
+            translate(
+                -50%,
+                60px
+            );
+
+    }
+
+    .pause-content .poem {
+
+        font-size:
+            18px;
+
+    }
+
+    .pause-signature {
+
+        margin-top:
+            44px;
+
+    }
+
+    .little-things {
+
+        min-height:
+            auto;
+
+    }
+
+    .little-things-content {
+
+        padding-top:
+            8vh;
+
+        padding-bottom:
+            9vh;
+
+    }
+
+    .little-things-intro {
+
+        margin-bottom:
+            38px;
+
+        font-size:
+            18px;
+
+    }
+
+    .little-things-note {
+
+        margin-bottom:
+            25px;
+
+        font-size:
+            7px;
+
+    }
+
+    .things-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            1px;
+
+        margin-top:
+            24px;
+
+    }
+
+    .thing-card {
+
+        min-height:
+            230px;
+
+        padding:
+            23px 21px;
+
+    }
+
+    .thing-index {
+
+        font-size:
+            7px;
+
+    }
+
+    .thing-icon {
+
+        margin-top:
+            31px;
+
+        font-size:
+            27px;
+
+    }
+
+    .thing-title {
+
+        margin-top:
+            15px;
+
+        font-size:
+            28px;
+
+    }
+
+    .thing-arrow {
+
+        top:
+            22px;
+
+        right:
+            21px;
+
+    }
+
+    .thing-description {
+
+        max-width:
+            240px;
+
+        margin-top:
+            25px;
+
+        font-size:
+            15px;
+
+    }
+
+    .little-things-footnote {
+
+        margin-top:
+            43px;
+
+        font-size:
+            16px;
+
+    }
+
+    .things-atmosphere {
+
+        opacity:
+            0.65;
+
+    }
+
+    /* secret trigger: kecil secara visual, touch target diperbesar */
+
+    .little-things-secret {
+
+        width:
+            42px;
+
+        height:
+            42px;
+
+    }
+
+    .canvas-section {
+
+        min-height:
+            auto;
+
+    }
+
+    .canvas-content {
+
+        padding-top:
+            8vh;
+
+        padding-bottom:
+            9vh;
+
+    }
+
+    .canvas-intro {
+
+        margin-bottom:
+            34px;
+
+        font-size:
+            18px;
+
+    }
+
+    .canvas-intro-mark {
+
+        font-size:
+            7px;
+
+        letter-spacing:
+            0.11em;
+
+    }
+
+    .canvas-workspace {
+
+        width:
+            100%;
+
+        padding-top:
+            17px;
+
+        padding-bottom:
+            22px;
+
+    }
+
+    .canvas-stage-wrapper {
+
+        width:
+            100%;
+
+    }
+
+    #creativeCanvas {
+
+        width:
+            100%;
+
+        height:
+            auto;
+
+        min-height:
+            0;
+
+        aspect-ratio:
+            1.6 / 1;
+
+    }
+
+    .canvas-controls {
+
+        flex-direction:
+            column;
+
+        gap:
+            20px;
+
+        padding-top:
+            21px;
+
+    }
+
+    .control-group {
+
+        width:
+            100%;
+
+    }
+
+    .control-buttons {
+
+        width:
+            100%;
+
+    }
+
+    .canvas-control {
+
+        min-height:
+            37px;
+
+        padding:
+            8px 10px;
+
+        font-size:
+            8px;
+
+    }
+
+    .canvas-actions {
+
+        display:
+            grid;
+
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0, 1fr)
+            );
+
+        width:
+            100%;
+
+    }
+
+    .canvas-action {
+
+        justify-content:
+            center;
+
+        min-height:
+            38px;
+
+        padding:
+            8px 7px;
+
+        font-size:
+            8px;
+
+    }
+
+    .canvas-hint {
+
+        margin-top:
+            18px;
+
+        font-size:
+            7px;
+
+        line-height:
+            1.7;
+
+    }
+
+    .canvas-afterthought {
+
+        margin-top:
+            50px;
+
+        font-size:
+            17px;
+
+    }
+
+    /* secret canvas buttons: jangan terlalu kecil untuk jari */
+
+    .canvas-secret {
+
+        width:
+            42px;
+
+        height:
+            42px;
+
+    }
+
+    .canvas-secret-secondary {
+
+        width:
+            38px;
+
+        height:
+            38px;
+
+    }
+
+    .hidden-note {
+
+        min-height:
+            auto;
+
+    }
+
+    .hidden-note-content {
+
+        padding-top:
+            9vh;
+
+        padding-bottom:
+            10vh;
+
+    }
+
+    .hidden-section-title {
+
+        max-width:
+            340px;
+
+    }
+
+    .hidden-section-intro {
+
+        max-width:
+            330px;
+
+        font-size:
+            17px;
+
+    }
+
+    .hidden-trigger-wrapper {
+
+        margin-top:
+            56px;
+
+    }
+
+    .hidden-trigger {
+
+        width:
+            70px;
+
+        height:
+            70px;
+
+    }
+
+    .hidden-trigger-hint {
+
+        margin-top:
+            23px;
+
+        font-size:
+            12px;
+
+    }
+
+    /* template lama tidak mengganggu layout; pesan sebenarnya muncul di overlay */
+
+    .hidden-message {
+
+        display:
+            none !important;
+
+        margin:
+            0;
+
+        padding:
+            0;
+
+    }
+
+    .hidden-note-secret {
+
+        width:
+            42px;
+
+        height:
+            42px;
+
+    }
+
+    .hidden-note-footer {
+
+        margin-top:
+            60px;
+
+    }
+
+    .hidden-note-footer small {
+
+        max-width:
+            200px;
+
+        text-align:
+            center;
+
+        line-height:
+            1.6;
+
+    }
+
+    .egg-overlay {
+
+        padding:
+            18px;
+
+    }
+
+    .egg-card-modal {
+
+        width:
+            min(
+                100%,
+                560px
+            );
+
+        max-height:
+            calc(
+                100svh - 36px
+            );
+
+        padding:
+            44px 24px 28px;
+
+        overflow-y:
+            auto;
+
+        overscroll-behavior:
+            contain;
+
+    }
+
+    .egg-close {
+
+        top:
+            12px;
+
+        right:
+            14px;
+
+        width:
+            38px;
+
+        height:
+            38px;
+
+    }
+
+    .egg-small {
+
+        font-size:
+            8px;
+
+        letter-spacing:
+            0.18em;
+
+    }
+
+    .egg-card-modal h2 {
+
+        margin-top:
+            14px;
+
+        font-size:
+            clamp(
+                38px,
+                11vw,
+                58px
+            );
+
+        line-height:
+            0.94;
+
+    }
+
+    .egg-poem {
+
+        margin-top:
+            25px;
+
+        font-size:
+            15px;
+
+        line-height:
+            1.9;
+
+    }
+
+    .egg-final {
+
+        margin-top:
+            28px;
+
+        font-size:
+            15px;
+
+        line-height:
+            1.7;
+
+    }
+
+    .egg-footer {
+
+        margin-top:
+            32px;
+
+        gap:
+            12px;
+
+    }
+
+    .egg-next {
+
+        min-height:
+            40px;
+
+        padding:
+            9px 13px;
+
+        font-size:
+            8px;
+
+    }
+
+    .ending {
+
+        min-height:
+            105svh;
+
+    }
+
+    .ending-content {
+
+        padding-top:
+            8vh;
+
+        padding-bottom:
+            8vh;
+
+    }
+
+    .ending-line {
+
+        height:
+            54px;
+
+        margin-bottom:
+            32px;
+
+    }
+
+    .ending-pretitle {
+
+        margin-bottom:
+            18px;
+
+        font-size:
+            18px;
+
+    }
+
+    .ending h2 {
+
+        margin-bottom:
+            31px;
+
+        font-size:
+            clamp(
+                49px,
+                13.5vw,
+                75px
+            );
+
+    }
+
+    .ending-text {
+
+        max-width:
+            330px;
+
+        font-size:
+            17px;
+
+    }
+
+    .ending-divider {
+
+        margin:
+            45px auto;
+
+    }
+
+    .ending-closing {
+
+        gap:
+            10px;
+
+        font-size:
+            16px;
+
+        line-height:
+            1.5;
+
+    }
+
+    /* jangan sembunyikan semua .closing-mark; yang pertama adalah easter egg button */
+
+    .ending-closing
+    .closing-mark:not(
+        .egg-trigger
+    ) {
+
+        display:
+            none;
+
+    }
+
+    /* easter egg closing mark */
+
+    .ending-closing
+    .closing-mark.egg-trigger {
+
+        display:
+            inline-flex;
+
+        width:
+            40px;
+
+        height:
+            40px;
+
+        flex:
+            0 0 auto;
+
+    }
+
+    .credits {
+
+        margin-top:
+            68px;
+
+    }
+
+    .credits strong {
+
+        margin-top:
+            17px;
+
+        font-size:
+            8px;
+
+    }
+
+    .ending-glow {
+
+        width:
+            300px;
+
+        height:
+            300px;
+
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .section-content {
+
+        width:
+            calc(100% - 28px);
+
+    }
+
+    .landing-content {
+
+        width:
+            calc(100% - 28px);
+
+    }
+
+    .landing h1 {
+
+        font-size:
+            57px;
+
+    }
+
+    .landing-eyebrow {
+
+        font-size:
+            7px;
+
+    }
+
+    .subtitle {
+
+        font-size:
+            16px;
+
+    }
+
+    .landing-whisper {
+
+        font-size:
+            11px;
+
+    }
+
+    .landing-footer {
+
+        left:
+            13px;
+
+        right:
+            13px;
+
+        bottom:
+            13px;
+
+        font-size:
+            6px;
+
+    }
+
+    .landing-footer > span:first-child {
+
+        max-width:
+            135px;
+
+    }
+
+    .scroll-indicator {
+
+        max-width:
+            90px;
+
+    }
+
+    /* sedikit lebih besar agar title mark mudah disentuh */
+
+    .title-mark {
+
+        top:
+            -20px;
+
+        right:
+            -20px;
+
+        width:
+            26px;
+
+        height:
+            26px;
+
+    }
+
+    .pause-content .poem {
+
+        font-size:
+            17px;
+
+    }
+
+    .breathing-space {
+
+        transform:
+            scale(0.9);
+
+        margin-top:
+            43px;
+
+        margin-bottom:
+            46px;
+
+    }
+
+    .little-things-intro {
+
+        font-size:
+            17px;
+
+    }
+
+    .thing-card {
+
+        min-height:
+            220px;
+
+    }
+
+    .thing-description {
+
+        font-size:
+            14px;
+
+    }
+
+    .canvas-intro {
+
+        font-size:
+            17px;
+
+    }
+
+    .canvas-actions {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .canvas-action {
+
+        width:
+            100%;
+
+    }
+
+    .hidden-section-intro {
+
+        font-size:
+            16px;
+
+    }
+
+    .hidden-trigger {
+
+        width:
+            66px;
+
+        height:
+            66px;
+
+    }
+
+    /* modal lebih compact */
+
+    .egg-overlay {
+
+        padding:
+            12px;
+
+    }
+
+    .egg-card-modal {
+
+        max-height:
+            calc(
+                100svh - 24px
+            );
+
+        padding:
+            42px 20px 24px;
+
+    }
+
+    .egg-card-modal h2 {
+
+        font-size:
+            clamp(
+                35px,
+                11vw,
+                50px
+            );
+
+    }
+
+    .egg-poem {
+
+        font-size:
+            14px;
+
+    }
+
+    .egg-final {
+
+        font-size:
+            14px;
+
+    }
+
+    .egg-footer {
+
+        margin-top:
+            26px;
+
+    }
+
+    .ending h2 {
+
+        font-size:
+            46px;
+
+    }
+
+    .ending-text {
+
+        font-size:
+            16px;
+
+    }
+
+    .ending-closing {
+
+        font-size:
+            15px;
+
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .section-content {
+
+        width:
+            calc(100% - 24px);
+
+    }
+
+    .landing-content {
+
+        width:
+            calc(100% - 24px);
+
+    }
+
+    .landing h1 {
+
+        font-size:
+            52px;
+
+    }
+
+    .landing-eyebrow {
+
+        font-size:
+            6.5px;
+
+    }
+
+    .subtitle {
+
+        font-size:
+            15px;
+
+    }
+
+    .landing-whisper {
+
+        font-size:
+            10px;
+
+    }
+
+    .breathing-space {
+
+        transform:
+            scale(0.82);
+
+    }
+
+    .thing-card {
+
+        min-height:
+            210px;
+
+        padding:
+            21px 18px;
+
+    }
+
+    .thing-title {
+
+        font-size:
+            26px;
+
+    }
+
+    .thing-description {
+
+        font-size:
+            13px;
+
+    }
+
+    #creativeCanvas {
+
+        aspect-ratio:
+            1.45 / 1;
+
+    }
+
+    .hidden-section-title {
+
+        font-size:
+            43px;
+
+    }
+
+    .egg-card-modal {
+
+        padding:
+            40px 17px 21px;
+
+    }
+
+    .egg-card-modal h2 {
+
+        font-size:
+            34px;
+
+    }
+
+    .egg-poem {
+
+        font-size:
+            13px;
+
+        line-height:
+            1.8;
+
+    }
+
+    .egg-final {
+
+        font-size:
+            13px;
+
+    }
+
+    .ending h2 {
+
+        font-size:
+            42px;
+
+    }
+
+    .credits {
+
+        margin-top:
+            58px;
+
+    }
+
+}
+
+@media (
+    max-width: 850px
+) and (
+    max-height: 520px
+) and (
+    orientation: landscape
+) {
+
+    .landing {
+
+        min-height:
+            680px;
+
+    }
+
+    .landing-content {
+
+        padding-top:
+            30px;
+
+    }
+
+    .landing h1 {
+
+        font-size:
+            clamp(
+                58px,
+                12vw,
+                90px
+            );
+
+    }
+
+    .subtitle {
+
+        margin-top:
+            20px;
+
+        font-size:
+            16px;
+
+    }
+
+    .enter-button {
+
+        margin-top:
+            25px;
+
+    }
+
+    .landing-whisper {
+
+        margin-top:
+            16px;
+
+    }
+
+    .landing-footer {
+
+        bottom:
+            12px;
+
+    }
+
+    .pause {
+
+        min-height:
+            700px;
+
+    }
+
+    .breathing-space {
+
+        margin-top:
+            35px;
+
+        margin-bottom:
+            35px;
+
+        transform:
+            scale(0.72);
+
+    }
+
+    .little-things,
+    .canvas-section,
+    .hidden-note,
+    .ending {
+
+        min-height:
+            auto;
+
+    }
+
+    /* modal landscape tetap di tengah tanpa memenuhi seluruh tinggi */
+
+    .egg-card-modal {
+
+        max-height:
+            calc(
+                100svh - 24px
+            );
+
+        padding-top:
+            34px;
+
+    }
+
+}
+
+@media (
+    hover: none
+) and (
+    pointer: coarse
+) {
+
+    /* hindari hover transform yang terasa aneh di layar sentuh */
+
+    .thing-card:hover {
+
+        transform:
+            none;
+
+    }
+
+    .thing-card:hover::before {
+
+        opacity:
+            0;
+
+    }
+
+    .thing-card:hover
+    .thing-icon {
+
+        transform:
+            none;
+
+    }
+
+    .thing-card:hover
+    .thing-arrow {
+
+        transform:
+            none;
+
+        color:
+            var(--muted-dark);
+
+    }
+
+    .canvas-stage-wrapper:hover {
+
+        transform:
+            none;
+
+    }
+
+    .enter-button:hover {
+
+        gap:
+            28px;
+
+    }
+
+    .hidden-trigger:hover {
+
+        transform:
+            none;
+
+        background:
+            transparent;
+
+    }
+
+    .hidden-trigger:hover::before {
+
+        transform:
+            none;
+
+        opacity:
+            1;
+
+    }
+
+    .title-mark:hover {
+
+        transform:
+            none;
+
+    }
+
+    .little-things-secret:hover,
+    .canvas-secret:hover {
+
+        transform:
+            none;
+
+    }
+
+    .hidden-note-secret:hover {
+
+        transform:
+            translateX(-50%);
+
+    }
+
+    /* modal close/next tetap terasa seperti kontrol touch biasa */
+
+    .egg-close:hover,
+    .egg-next:hover {
+
+        transform:
+            none;
+
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+
+        scroll-behavior:
+            auto;
+
+    }
+
+    *,
+    *::before,
+    *::after {
+
+        animation-duration:
+            0.01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            0.01ms !important;
+
+    }
+
+    /* jangan sembunyikan easter egg, hanya matikan motion-nya */
+
+    .egg-overlay.is-open
+    .egg-card-modal {
+
+        animation:
+            none !important;
+
+    }
+
+    .egg-overlay.is-open
+    .egg-backdrop {
+
+        animation:
+            none !important;
+
+    }
+
+}
+
+/* bintang landing kini di atas .landing-content (dulu klik tertahan); bintang biasa tetap pointer-events: none, hanya egg yang bisa disentuh */
+.ambient-stars { z-index: 6; }
+
+/* Egg selalu berada di atas elemen lain di sekitarnya (canvas, kartu, dll). */
+.egg-trigger.egg-find { z-index: 20; }
+
+/* .egg-trigger:active: translate(-50%) dipertahankan agar tombol tidak melompat dan klik tidak batal */
+.breathing-core.egg-trigger:active { transform: translate(-50%, -50%) scale(0.94); }
+.hidden-note-secret.egg-trigger:active { transform: translateX(-50%) scale(0.94); }
+
+@media (min-width: 701px) and (max-width: 1100px) {
+    .egg-find::after { inset: -16px; }
+    .ambient-star.egg-find::after { inset: -28px; }
+    .little-things-secret.egg-find,
+    .canvas-secret.egg-find,
+    .hidden-note-secret.egg-find { width: 44px; height: 44px; }
+}
+
+@media (max-width: 700px) {
+
+    /* tombol masuk */
+    .enter-button { min-height: 56px; padding: 0 34px; }
+
+    /* egg: glyph lebih besar, area sentuh lebih lega */
+    .title-mark.egg-find { width: 30px; height: 30px; font-size: 15px; }
+    .title-mark.egg-find::after,
+    .closing-mark.egg-find::after { inset: -14px; }
+    .ambient-star.egg-find::after { inset: -26px; }
+    .breathing-core.egg-find { width: 64px; height: 64px; min-width: 64px; min-height: 64px; }
+    .hidden-trigger.egg-find { width: 72px; height: 72px; }
+    .ending-closing .closing-mark.egg-trigger.egg-find { width: 44px; height: 44px; font-size: 18px; }
+
+    /* kartu kopi */
+    .egg-find-card::after { right: 52px; }
+
+    /* nama (egg 11) sebelumnya 8px, sekarang terbaca dan mudah ditekan */
+    .credits strong.egg-name { margin-top: 17px; padding: 14px 24px; font-size: 16px; }
+
+    /* teks pengarah di landing tidak boleh keluar layar */
+    .scroll-indicator { max-width: 100%; white-space: normal; line-height: 1.6; text-align: center; }
+
+    /* popup */
+    .egg-overlay {
+        padding:
+            max(14px, env(safe-area-inset-top))
+            max(14px, env(safe-area-inset-right))
+            max(14px, env(safe-area-inset-bottom))
+            max(14px, env(safe-area-inset-left));
+    }
+    .egg-overlay .egg-card-modal { padding-bottom: 30px; }
+    .egg-overlay .egg-close { width: 44px; height: 44px; top: 10px; right: 10px; }
+    .egg-overlay .egg-small { font-size: 11px; letter-spacing: 0.08em; }
+    .egg-overlay .egg-poem { font-size: 16px; line-height: 1.85; }
+    .egg-overlay .egg-final { font-size: 15px; }
+    .egg-overlay .egg-next { min-height: 48px; padding: 0 22px; font-size: 12px; letter-spacing: 0.08em; }
+}
+
+@media (max-width: 430px) {
+    .enter-button { min-width: min(78vw, 300px); padding: 0 28px; }
+    .egg-overlay .egg-poem { font-size: 15px; }
+}
+
+@media (max-width: 360px) {
+    .egg-overlay .egg-poem { font-size: 14px; }
+    .egg-overlay .egg-small { font-size: 10px; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .egg-find::after { inset: -16px; }
+    .ambient-star.egg-find::after { inset: -28px; }
+    .egg-overlay .egg-next,
+    .egg-overlay .egg-close { min-height: 48px; }
+}
+
+@media (max-width: 850px) and (max-height: 520px) {
+    .egg-overlay .egg-card-modal { padding-top: 40px; padding-bottom: 22px; }
+    .egg-overlay .egg-poem { font-size: 14px; line-height: 1.7; }
+    .egg-overlay .egg-card-modal h2 { font-size: 30px; }
+}
+
+@media (max-width: 700px) {
+    /* ikon sosial: tetap mudah disentuh, sedikit lebih rapat */
+    .social-links { gap: 12px; margin-top: 10px; }
+    .social-link { width: 44px; height: 44px; }
+
+    /* palet warna: lingkaran sedikit lebih besar supaya nyaman disentuh jari */
+    .canvas-swatch { width: 30px; height: 30px; }
+    .canvas-swatches { gap: 12px; }
+
+    /* langit di dalam popup dikurangi sedikit supaya teks tetap yang utama */
+    .egg-overlay .egx-sky { opacity: 0.75; }
+}
+
+@media (max-width: 430px) {
+    .page-moon { font-size: 26px; opacity: 0.12; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .canvas-swatch:hover { transform: none; }
+    .social-link:active { transform: scale(0.94); }
+}
+
+.hidden-note-secret,
+.hidden-note-secret:hover,
+.hidden-note-secret:active {
+    left: auto;
+    right: 9%;
+}
+.hidden-note-secret:hover { transform: scale(1.2); }
+.hidden-note-secret:active { transform: scale(0.92); }
+
+@media (max-width: 700px) {
+    .hidden-note-secret { right: 8%; bottom: 26%; }
+}
+
+@media (max-width: 700px) {
+    .hidden-note-verse { font-size: 16px; margin-top: 20px; }
+    .hidden-note-aura { width: 150px; height: 150px; }
+}
+
+@media (max-width: 700px) {
+    .page-moon { font-size: 24px !important; opacity: 0.14; }
+    .page-moon-landing { bottom: 10%; }
+    .ambient-spark { display: none; }
+    .hidden-note-motes { display: none; }
+}
+
+@media (max-width: 850px) and (max-height: 520px) {
+    .page-moon { display: none; }
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+.section-content,
+.landing-content {
+    min-width: 0;
+}
+h1, h2 {
+    overflow-wrap: break-word;
+}
+
+@media (min-width: 701px) {
+    .landing-content .enter-button {
+        margin-top: clamp(28px, 4.5vh, 44px);
+    }
+}
+
+@media (max-width: 900px) {
+    .control-group {
+        gap: 10px;
+    }
+    .control-label {
+        flex: 0 0 auto;
+        width: auto;
+    }
+    .canvas-controls {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .ending-closing {
+        flex-direction: column;
+        gap: 22px;
+        text-align: center;
+    }
+    .ending-closing p {
+        max-width: 100%;
+    }
+    .credits strong.egg-name + small {
+        display: block;
+        margin-top: 22px;
+    }
+    .social-links {
+        margin-top: 14px;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .canvas-swatch {
+        width: 32px;
+        height: 32px;
+    }
+    .canvas-swatches {
+        gap: 12px;
+    }
+    .canvas-control,
+    .canvas-action {
+        min-height: 40px;
+    }
+}
+
+@media (max-width: 950px) and (max-height: 520px) and (orientation: landscape) {
+    .landing {
+        min-height: max(100svh, 430px);
+    }
+    .landing-content {
+        padding-top: 18px;
+        padding-bottom: 46px;
+    }
+    .landing h1 {
+        font-size: clamp(44px, 15vh, 66px);
+    }
+    .landing-eyebrow {
+        margin-bottom: 4px;
+    }
+    .subtitle {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .landing-content .enter-button {
+        margin-top: 14px;
+        min-height: 46px;
+    }
+    .landing-whisper {
+        margin-top: 10px;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    .landing-footer {
+        bottom: 8px;
+    }
+    .pause {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .landing h1 {
+        font-size: clamp(32px, 9.6vw, 40px);
+    }
+    #pause h2,
+    #little-things h2,
+    #canvas-section h2 {
+        font-size: clamp(23px, 6.9vw, 29px);
+        line-height: 1.16;
+    }
+    #hidden-note .hidden-section-title,
+    #ending h2 {
+        font-size: clamp(21px, 6.2vw, 26px);
+        line-height: 1.18;
+    }
+    #pause .poem,
+    #little-things .poem,
+    #canvas-section .poem,
+    #pause .section-lead,
+    #canvas-section .canvas-intro {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+    #hidden-note .hidden-section-intro,
+    #ending .ending-text,
+    #ending .ending-closing p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+
+    /* kartu "hal-hal kecil": lebih pendek, tetap bisa dibuka seperti biasa */
+    .things-grid .thing-card {
+        min-height: 128px;
+        padding: 16px 16px;
+    }
+    .things-grid .thing-icon {
+        margin-top: 12px;
+        margin-bottom: 8px;
+        font-size: 22px;
+    }
+    .things-grid .thing-title {
+        margin-top: 6px;
+        font-size: 19px;
+    }
+    .things-grid .thing-description {
+        margin-top: 0;
+    }
+    #pause h2,
+    #little-things h2,
+    #canvas-section h2,
+    #hidden-note .hidden-section-title,
+    #ending h2 {
+        text-wrap: balance;
+    }
+    .things-grid .thing-description {
+        font-size: 12.5px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+    .landing h1 {
+        font-size: clamp(50px, 8.2vw, 72px);
+    }
+    #pause h2,
+    #little-things h2,
+    #canvas-section h2,
+    #hidden-note .hidden-section-title,
+    #ending h2 {
+        font-size: clamp(30px, 4.4vw, 40px);
+        line-height: 1.16;
+    }
+    #pause .poem,
+    #little-things .poem,
+    #canvas-section .poem,
+    #pause .section-lead,
+    #canvas-section .canvas-intro {
+        font-size: 15.5px;
+        line-height: 1.72;
+    }
+    #hidden-note .hidden-section-intro,
+    #ending .ending-text,
+    #ending .ending-closing p {
+        font-size: 15px;
+        line-height: 1.72;
+    }
+}
+
+@media (max-width: 1100px) {
+    #pause .breathing-space {
+        transform: none;
+        width: min(100%, 280px);
+        height: auto;
+        margin: 22px auto 24px;
+        padding-top: 118px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* scale disatukan dengan translate; properti scale terpisah dikalikan SESUDAH translate(-50%, -50%) sehingga pusat lingkaran meleset */
+    #pause .breathing-orbit {
+        top: 60px;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.72);
+    }
+    #pause .breathing-label,
+    #pause .breathing-hint {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        margin: 0;
+        transform: none;
+    }
+    #pause .breathing-label {
+        min-height: 25px;
+        font-size: 15px;
+    }
+    #pause .breathing-hint {
+        margin-top: 6px;
+        font-size: 9px;
+        line-height: 1.6;
+    }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+    #pause .breathing-space {
+        padding-top: 160px;
+    }
+    #pause .breathing-orbit {
+        top: 80px;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.72);
+    }
+}
+
+@media (max-width: 1100px) {
+    /* bintang egg 01 pindah ke atas kiri judul, tidak lagi menimpa huruf "A" */
+    .landing-title-wrapper .title-mark {
+        top: -52px;
+        left: -34px;
+        right: auto;
+        bottom: auto;
+    }
+
+    /* bulan hiasan dipindah ke atas supaya tidak menimpa judul */
+    #pause .page-moon,
+    #hidden-note .page-moon {
+        top: 1.5% !important;
+    }
+    #little-things .page-moon {
+        top: 1.5% !important;
+        bottom: auto !important;
+    }
+
+    /* egg di bawah catatan "hal-hal kecil" dan "jejak kecil": di bawah teks, rata tengah (dulu persen, jatuh di atas teks) */
+    .little-things-content .little-things-footnote,
+    .canvas-content .canvas-afterthought {
+        margin-bottom: 34px;
+    }
+    .little-things-content .little-things-secret,
+    .canvas-content .canvas-secret:not(.canvas-secret-secondary) {
+        top: auto;
+        bottom: 6px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* petunjuk "mendekatlah, dia tidak menggigit" tidak menimpa catatan di bawahnya */
+    .hidden-note-content .hidden-trigger-wrapper {
+        margin-bottom: 30px;
+    }
+    .hidden-note-content .hidden-trigger-hint {
+        top: 130px;
+    }
+    /* egg hati: geser sedikit ke dalam supaya tidak terpotong tepi layar */
+    .hidden-note-content .hidden-note-secret {
+        left: auto;
+        right: 38px;
+    }
+}
+
+@media (max-width: 640px) {
+    .celebration .cel-moon {
+        top: 12px;
+        left: 12px;
+        width: 50px;
+    }
+    .celebration .cel-title {
+        font-size: clamp(30px, 9.2vw, 40px);
+        text-wrap: balance;
+    }
+    .celebration .cel-title.is-long {
+        font-size: clamp(24px, 7.4vw, 32px);
+        overflow-wrap: break-word;
+    }
+    .celebration .cel-sub {
+        font-size: 14px;
+        padding: 0 8px;
+    }
+    .celebration .cel-bar {
+        width: max-content;
+        max-width: calc(100vw - 20px);
+    }
+    .celebration .cel-btn {
+        white-space: nowrap;
+        padding: 0 12px;
+        font-size: 9.5px;
+        letter-spacing: 0.12em;
+    }
+}
+@media (max-width: 340px) {
+    .celebration .cel-btn {
+        padding: 0 9px;
+        letter-spacing: 0.08em;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+    .landing-title-wrapper .title-mark {
+        top: -62px;
+    }
+}
+
+@media (min-width: 1101px) {
+    .landing-title-wrapper .title-mark {
+        top: -60px;
+        left: -46px;
+        right: auto;
+        bottom: auto;
+    }
+}
+
+@media (min-width: 1600px) {
+    .landing-title-wrapper .title-mark {
+        top: -84px;
+        left: -64px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1100px) {
+    .celebration .cel-title {
+        font-size: clamp(40px, 7vw, 64px);
+        text-wrap: balance;
+    }
+    .celebration .cel-title.is-long {
+        font-size: clamp(30px, 5.4vw, 52px);
+    }
+    .celebration .cel-moon {
+        top: 26px;
+        left: 26px;
+        width: 84px;
+    }
+    .celebration .cel-bar {
+        width: max-content;
+    }
+    .celebration .cel-btn {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .landing-footer {
+        left: 18px;
+        right: 18px;
+        width: auto;
+        transform: none;
+        bottom: 14px;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        text-align: center;
+        font-size: 8px;
+        letter-spacing: 0.1em;
+    }
+    .landing-footer > span:first-child {
+        max-width: 300px;
+    }
+    .landing-footer .scroll-indicator {
+        max-width: none;
+        white-space: normal;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 700px) {
+    .canvas-workspace .cvx-bar {
+        gap: 8px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .canvas-workspace .cvx-row {
+        gap: 6px;
+    }
+    .canvas-workspace .cvx-info {
+        font-size: 9px;
+        min-width: 0;
+    }
+    .canvas-workspace .cvx-label {
+        font-size: 8.5px;
+        margin-right: 2px;
+    }
+    .canvas-workspace .cvx-range {
+        flex: 1 1 100%;
+        gap: 8px;
+        font-size: 9px;
+    }
+    .canvas-workspace .cvx-pal {
+        gap: 6px;
+        flex: 1 1 100%;
+    }
+    .canvas-workspace .cvx-pal .canvas-swatch {
+        width: 30px;
+        height: 30px;
+    }
+    .canvas-workspace .canvas-control,
+    .canvas-workspace .canvas-action {
+        min-height: 34px;
+        padding: 6px 8px;
+        font-size: 9px;
+        letter-spacing: 0.06em;
+    }
+    .canvas-workspace .canvas-controls {
+        gap: 12px;
+        padding-top: 14px;
+    }
+    .canvas-workspace .control-group {
+        gap: 6px;
+    }
+    .canvas-workspace .control-buttons {
+        gap: 6px;
+    }
+    .canvas-workspace .canvas-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+    }
+    .canvas-workspace .canvas-actions .canvas-action {
+        min-height: 38px;
+    }
+    .canvas-workspace .cvx-wm-note {
+        margin-top: 0;
+        font-size: 8.5px;
+    }
+}
+
+@keyframes eggRingSoft {
+    0%   { transform: scale(0.9); opacity: 0.85; }
+    100% { transform: scale(1.2); opacity: 0; }
+}
+@media (max-width: 1100px) {
+    /* ukuran tombol (area sentuh) */
+    body .egg-trigger.little-things-secret,
+    body .egg-trigger.canvas-secret,
+    body .egg-trigger.hidden-note-secret,
+    body .ending-closing .egg-trigger.closing-mark.egg-find {
+        width: 36px;
+        height: 36px;
+    }
+    body .egg-trigger.canvas-secret-secondary {
+        width: 32px;
+        height: 32px;
+    }
+    body .egg-trigger.title-mark.egg-find {
+        width: 32px;
+        height: 32px;
+    }
+    body .egg-trigger.hidden-trigger.egg-find {
+        width: 58px;
+        height: 58px;
+    }
+
+    /* isi tombol selalu di tengah, baik horizontal maupun vertikal */
+    body .egg-trigger.egg-find:not(.egg-name):not(.ambient-star):not(.breathing-core) {
+        display: grid;
+        place-items: center;
+        place-content: center;
+    }
+    body .egg-trigger.egg-find:where(:not(.egg-name):not(.breathing-core):not(.hidden-trigger)) > span,
+    body .egg-trigger.egg-find:where(:not(.egg-name):not(.breathing-core):not(.hidden-trigger)) > .egg-skin {
+        font-size: 17px;
+        line-height: 1;
+    }
+
+    /* bingkai kedip lebih kecil dan lebih halus */
+    body .egg-find:not(.ambient-star):not(.egg-name):not(.egg-find-card)::after {
+        inset: -6px;
+        animation-name: eggRingSoft;
+        border-color: rgba(255, 240, 200, 0.7);
+        box-shadow:
+            0 0 8px rgba(255, 226, 170, 0.3),
+            inset 0 0 6px rgba(255, 226, 170, 0.12);
+    }
+    body .egg-trigger.hidden-trigger.egg-find::before {
+        inset: -4px;
+    }
+    body .ambient-star.egg-find::after {
+        inset: -18px;
+    }
+    body .ambient-star.egg-star.egg-find > span {
+        width: 62px;
+        height: 62px;
+        margin: -31px 0 0 -31px;
+    }
+
+    /* simbol digambar: bintang (egg 01, 08, 10) */
+    body .egg-trigger.egg-find.closing-mark > span,
+    body .egg-trigger.egg-find.title-mark > span,
+    body .egg-trigger.egg-find.hidden-trigger > span {
+        display: block;
+        width: 16px;
+        height: 16px;
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+        text-shadow: none;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff6dc' d='M12 0C13.1 8.2 15.8 10.9 24 12C15.8 13.1 13.1 15.8 12 24C10.9 15.8 8.2 13.1 0 12C8.2 10.9 10.9 8.2 12 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
+        filter: drop-shadow(0 0 4px rgba(255, 236, 190, 0.9));
+    }
+    body .egg-trigger.egg-find.title-mark > span {
+        width: 14px;
+        height: 14px;
+    }
+    body .egg-trigger.egg-find.hidden-trigger > span {
+        width: 22px;
+        height: 22px;
+    }
+    /* simbol digambar: hati (egg 09) */
+    body .egg-trigger.egg-find.hidden-note-secret > span {
+        display: block;
+        width: 17px;
+        height: 17px;
+        font-size: 0;
+        line-height: 0;
+        color: transparent;
+        text-shadow: none;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0.2 24 24'%3E%3Cpath fill='none' stroke='%23fff6dc' stroke-width='1.7' stroke-linejoin='round' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E") center / contain no-repeat;
+        filter: drop-shadow(0 0 4px rgba(255, 236, 190, 0.85));
+    }
+
+    /* hati (egg 09): sejajar dengan lingkaran besar; top:auto lalu ditarik naik setengah tinggi kotak, tidak lagi persen */
+    .hidden-note-content .hidden-note-secret,
+    .hidden-note-content .hidden-note-secret:hover,
+    .hidden-note-content .hidden-note-secret:focus-visible {
+        position: absolute;
+        top: auto;
+        bottom: auto;
+        left: 50%;
+        right: auto;
+        margin-left: 54px;
+        margin-top: -96px;
+        transform: none;
+    }
+    .hidden-note-content .hidden-note-secret.egg-trigger:active {
+        transform: scale(0.94);
+    }
+
+    .egg-trigger.egg-name {
+        scale: 0.85;
+    }
+    .egg-trigger.egg-name .egg-skin,
+    .egg-trigger.egg-name bdi {
+        font-size: 14px;
+    }
+
+    /* ruang yang dipakai egg dirapatkan */
+    .hidden-note-content .hidden-trigger-wrapper {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 22px;
+    }
+    .hidden-note-content .hidden-trigger-hint {
+        top: 98px;
+    }
+    .ending-closing {
+        gap: 14px;
+    }
+    .ending-closing span.closing-mark {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .landing-eyebrow {
+        font-size: 8.5px;
+    }
+    .little-things-note span,
+    .canvas-intro-mark span,
+    .hidden-note-content small,
+    .hidden-message-small,
+    .pause-signature small {
+        font-size: 8.5px;
+    }
+    .thing-index {
+        font-size: 8px;
+    }
+    .canvas-workspace .control-label {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 700px) {
+    #little-things .little-things-footnote {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    #canvas-section .canvas-afterthought {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+    #hidden-note .hidden-note-verse {
+        font-size: 14.5px;
+        line-height: 1.75;
+    }
+    #hidden-note #hiddenMessageTitle {
+        font-size: clamp(21px, 6.2vw, 26px);
+        line-height: 1.2;
+    }
+    #hidden-note .hidden-message .poem,
+    #hidden-note .hidden-message-final {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+    #ending .ending-pretitle {
+        font-size: 14px;
+    }
+    #pause .breathing-label {
+        font-size: 14px;
+    }
+    #ending .credits > span {
+        font-size: 16px;
+    }
+    #ending .ending-closing span.closing-mark {
+        font-size: 20px;
+    }
+
+    /* judul popup egg dan tombol tutupnya */
+    #eggTitle {
+        font-size: clamp(22px, 6.8vw, 27px);
+        line-height: 1.2;
+    }
+    .egg-close {
+        width: 38px;
+        height: 38px;
+        top: 10px;
+        right: 10px;
+    }
+
+    /* gerbang perayaan */
+    .celebration-gate .gate-line {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+    .celebration-gate .gate-name-label {
+        font-size: 13px;
+    }
+    .celebration-gate .gate-name-input {
+        height: 44px;
+        font-size: 17px;
+    }
+    .celebration-gate .gate-name-hint {
+        font-size: 13px;
+    }
+    .celebration-gate .gate-button {
+        min-height: 54px;
+        padding: 0 22px;
+        font-size: 10px;
+    }
+    .celebration-gate .gate-tiny {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+    .landing h1 {
+        font-size: clamp(46px, 7.4vw, 62px);
+    }
+    .landing .subtitle {
+        font-size: 17px;
+    }
+    #pause h2,
+    #little-things h2,
+    #canvas-section h2,
+    #hidden-note .hidden-section-title,
+    #ending h2 {
+        font-size: clamp(27px, 3.9vw, 35px);
+    }
+    #hidden-note #hiddenMessageTitle {
+        font-size: clamp(26px, 3.9vw, 33px);
+    }
+    .things-grid .thing-title {
+        font-size: 24px;
+    }
+    .things-grid .thing-description {
+        font-size: 14px;
+    }
+    #hidden-note .hidden-note-verse {
+        font-size: 16px;
+    }
+    #hidden-note .hidden-message .poem {
+        font-size: 16px;
+    }
+    #hidden-note .hidden-message-final,
+    #ending .ending-pretitle,
+    #little-things .little-things-footnote,
+    #canvas-section .canvas-afterthought {
+        font-size: 15px;
+    }
+    #eggTitle {
+        font-size: clamp(30px, 4.6vw, 38px);
+    }
+    .celebration-gate .gate-line {
+        font-size: 20px;
+    }
+    .celebration-gate .gate-name-label {
+        font-size: 15px;
+    }
+    .celebration-gate .gate-name-hint {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* cincin detak: egg 02, 05, 06, 07, 09, 10 */
+    body .egg-find:not(.ambient-star):not(.egg-name):not(.egg-find-card):not(.breathing-core):not(.hidden-trigger)::after {
+        inset: 50% auto auto 50%;
+        width: 26px;
+        height: 26px;
+        margin: -13px 0 0 -13px;
+        box-sizing: border-box;
+    }
+
+    /* egg 03 (pusat jeda): inti dan cincin lebih kecil */
+    body .breathing-core.egg-trigger.egg-find {
+        width: 54px;
+        height: 54px;
+        min-width: 54px;
+        min-height: 54px;
+    }
+    body .breathing-core > .egg-orb {
+        width: 18px;
+        height: 18px;
+        margin: -9px 0 0 -9px;
+        box-shadow: 0 0 12px 3px rgba(255, 226, 170, 0.7), 0 0 34px 9px rgba(255, 200, 110, 0.28);
+    }
+    body .breathing-core.egg-trigger.egg-find:not(.egg-name):not(.ambient-star):not(.egg-find-card)::after {
+        inset: -3px;
+    }
+
+    /* egg 01 (bintang halaman judul) */
+    body .ambient-star.egg-star.egg-find > span {
+        width: 44px;
+        height: 44px;
+        margin: -22px 0 0 -22px;
+    }
+    body .ambient-star.egg-star.egg-find > span::before {
+        inset: 8px;
+    }
+    body .ambient-star.egg-star.egg-find > span::after {
+        width: 7px;
+        height: 7px;
+        margin: -3.5px 0 0 -3.5px;
+        box-shadow: 0 0 12px 4px rgba(255, 232, 170, 0.8), 0 0 30px 8px rgba(255, 214, 140, 0.35);
+    }
+    body .ambient-star.egg-find::after {
+        inset: -11px;
+    }
+
+    /* egg 04 (kartu kopi): bintang penanda */
+    body .egg-find-card::after {
+        font-size: 14px;
+    }
+
+    /* egg 08 (lingkaran besar): lebih ramping */
+    body .egg-trigger.hidden-trigger.egg-find {
+        width: 46px;
+        height: 46px;
+    }
+    body .egg-trigger.hidden-trigger.egg-find::before {
+        inset: -4px;
+    }
+    body .hidden-trigger.egg-trigger.egg-find:not(.egg-name):not(.ambient-star):not(.egg-find-card)::after {
+        inset: 0;
+    }
+    body .egg-trigger.egg-find.hidden-trigger > span {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* ikon egg lainnya */
+    body .egg-trigger.egg-find.title-mark > span,
+    body .egg-trigger.egg-find.closing-mark > span {
+        width: 12px;
+        height: 12px;
+    }
+    body .egg-trigger.egg-find.hidden-note-secret > span {
+        width: 13px;
+        height: 13px;
+    }
+    body .canvas-secret.egg-trigger.egg-find > span svg {
+        width: 15px;
+        height: 15px;
+    }
+    body .egg-trigger.canvas-secret-secondary.egg-find > span {
+        font-size: 14px;
+    }
+
+    /* egg 09 (hati) mendekat ke egg 08 karena egg 08 lebih kecil; titik tengah tetap sejajar */
+    .hidden-note-content .hidden-note-secret,
+    .hidden-note-content .hidden-note-secret:hover,
+    .hidden-note-content .hidden-note-secret:focus-visible {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    /* egg 05 & 06: tepat di tengah antara teks terakhir dan batas bawah section; tengah = (margin-bottom + 9vh) / 2 dikurangi setengah tinggi tombol (18px) */
+    .little-things-content .little-things-footnote,
+    .canvas-content .canvas-afterthought {
+        margin-bottom: 58px;
+    }
+    .little-things-content .little-things-secret,
+    .canvas-content .canvas-secret:not(.canvas-secret-secondary) {
+        bottom: calc(11px + 4.5vh);
+    }
+
+    /* egg 07: sebaris dengan label "03 / JEJAK KECIL" (tengah label = 8vh + 6px dari batas atas) */
+    .canvas-section .canvas-secret.canvas-secret-secondary.egg-find {
+        top: calc(8vh - 10px);
+    }
+}
+
+:root {
+    --ts-body: 19px; /* isi: puisi, intro, paragraf */
+    --ts-body-lh: 1.75;
+    --ts-accent: 17px; /* kalimat penutup yang berdiri sendiri (miring) */
+    --ts-accent-lh: 1.7;
+    --ts-sub: 21px; /* subjudul halaman judul */
+    --ts-caption: 14px; /* bisikan / petunjuk kecil (miring) */
+}
+
+/* tablet */
+@media (max-width: 1100px) {
+    :root {
+        --ts-body: 17px;
+        --ts-body-lh: 1.74;
+        --ts-accent: 15.5px;
+        --ts-accent-lh: 1.7;
+        --ts-sub: 18px;
+        --ts-caption: 14px;
+        --ts-micro: 10.5px; /* label kapital kecil */
+        --ts-h1: clamp(54px, 8.8vw, 74px);
+        --ts-h2: clamp(32px, 4.7vw, 42px);
+    }
+}
+
+/* HP, termasuk HP yang diputar miring (layar pendek) */
+@media (max-width: 700px), (max-width: 1100px) and (max-height: 520px) {
+    :root {
+        --ts-body: 15px;
+        --ts-body-lh: 1.72;
+        --ts-accent: 14px;
+        --ts-accent-lh: 1.7;
+        --ts-sub: 15px;
+        --ts-caption: 13px;
+        --ts-micro: 9.5px;
+    }
+}
+
+/* judul HP (hanya lebar <= 700px, HP miring tetap pakai ukuran lamanya) */
+@media (max-width: 700px) {
+    :root {
+        --ts-h1: clamp(40px, 11.6vw, 48px);
+        --ts-h2: clamp(28px, 8.2vw, 35px);
+    }
+}
+
+body #pause .poem,
+body #pause .section-lead,
+body #pause .pause-lead,
+body #little-things .poem,
+body #canvas-section .poem,
+body #canvas-section .canvas-intro,
+body #hidden-note .hidden-section-intro,
+body #hidden-note .hidden-note-verse,
+body #hidden-note .hidden-message .poem,
+body #ending .ending-text,
+body #ending .ending-closing p {
+    font-family: var(--serif);
+    font-size: var(--ts-body);
+    line-height: var(--ts-body-lh);
+}
+
+/* lead "Tidak ada yang mengejarmu di sini..." : serif, warna disamakan dengan paragraf */
+body #pause .section-lead,
+body #pause .pause-lead {
+    font-weight: 400;
+    color: #bdb8af;
+}
+
+/* kalimat penutup yang berdiri sendiri: satu tingkat di bawah isi */
+body #little-things .little-things-footnote,
+body #canvas-section .canvas-afterthought,
+body #ending .ending-pretitle,
+body #hidden-note .hidden-message-final {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: var(--ts-accent);
+    line-height: var(--ts-accent-lh);
+    text-wrap: balance;
+}
+
+/* subjudul halaman judul + bisikan di bawah tombol */
+body .landing .subtitle {
+    font-size: var(--ts-sub);
+}
+body .landing .landing-whisper,
+body .hidden-note-content .hidden-trigger-hint {
+    font-size: var(--ts-caption);
+    line-height: 1.65;
+}
+
+@media (max-width: 1100px) {
+    body .eyebrow,
+    body .landing-eyebrow,
+    body .canvas-hint,
+    body .breathing-hint,
+    body .pause-signature small,
+    body .hidden-note-footer small,
+    body .hidden-message-small,
+    body .credits small,
+    body .little-things-note span,
+    body .canvas-intro-mark span {
+        font-size: var(--ts-micro);
+    }
+    body .landing-footer,
+    body .landing-footer > span,
+    body .landing-footer .scroll-indicator {
+        font-size: calc(var(--ts-micro) - 0.5px);
+        letter-spacing: 0.08em;
+        line-height: 1.7;
+    }
+}
+@media (max-width: 700px) {
+    body .landing-footer > span:first-child {
+        max-width: 330px;
+    }
+    body .landing .landing-whisper {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 700px),
+       (min-width: 701px) and (max-width: 1100px) and (min-height: 521px) {
+    body .landing h1 {
+        font-size: var(--ts-h1);
+    }
+    body #pause h2,
+    body #little-things h2,
+    body #canvas-section h2,
+    body #hidden-note .hidden-section-title,
+    body #hidden-note #hiddenMessageTitle,
+    body #ending h2 {
+        font-size: var(--ts-h2);
+        line-height: 1.14;
+        text-wrap: balance;
+    }
+}
+
+@media (max-width: 700px) {
+    body .landing-content .enter-button,
+    body .enter-button {
+        min-width: 150px;
+        width: auto;
+        min-height: 46px;
+        padding: 0 28px;
+        gap: 12px;
+        font-size: 10.5px;
+        letter-spacing: 0.26em;
+    }
+    body .enter-button .button-arrow {
+        font-size: 14px;
+    }
+    body .enter-button::before {
+        inset: 1.2px;
+    }
+}
+
+@keyframes eggBeaconSoft {
+    0%, 100% { opacity: 0.82; transform: scale(0.94); }
+    50%      { opacity: 1;    transform: scale(1.1); }
+}
+@keyframes eggSkinBlink {
+    0%, 100% { opacity: 0.78; }
+    50%      { opacity: 1; }
+}
+
+/* simbol di dalam tiap egg (kecuali bintang halaman judul = egg 01) */
+body .egg-trigger.egg-find:not(.egg-name):not(.ambient-star) > span {
+    animation: eggBeaconSoft 2.4s ease-in-out infinite;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transition:
+        translate 0.32s var(--egg-soft),
+        rotate 0.32s var(--egg-soft),
+        scale 0.32s var(--egg-soft);
+}
+/* bintang penanda di kartu kopi (egg 04) */
+body .egg-find-card::after {
+    animation: eggBeaconSoft 2.4s ease-in-out infinite;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transition:
+        translate 0.32s var(--egg-soft),
+        rotate 0.32s var(--egg-soft),
+        scale 0.32s var(--egg-soft);
+}
+/* cincin denyut: lapisan sendiri supaya tidak ikut digambar ulang */
+body .egg-find::after {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+}
+/* egg 06: titik tengah SVG tidak lagi dianimasikan, kedipnya sudah di span */
+body .canvas-secret.egg-trigger.egg-find > span svg .egg-core {
+    animation: none;
+    opacity: 0.95;
+}
+/* egg 08: tombol tidak lagi menganimasikan box-shadow, kilaunya statis */
+body .hidden-trigger.egg-trigger.egg-find {
+    animation: none;
+    box-shadow:
+        0 0 30px rgba(var(--egg-gold), 0.2),
+        0 0 14px rgba(183, 165, 138, 0.06),
+        inset 0 0 22px rgba(255, 226, 170, 0.12);
+}
+/* egg 11: nama berkedip lewat opacity, bukan text-shadow */
+body .credits strong.egg-name.egg-find {
+    animation: none;
+    text-shadow: 0 0 14px rgba(255, 226, 170, 0.8);
+}
+body .credits strong.egg-name.egg-find > .egg-skin {
+    animation: eggSkinBlink 3s ease-in-out infinite;
+    will-change: opacity;
+}
+@media (prefers-reduced-motion: reduce) {
+    body .egg-trigger.egg-find:not(.egg-name):not(.ambient-star) > span,
+    body .egg-find-card::after,
+    body .credits strong.egg-name.egg-find > .egg-skin {
+        animation: none !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* egg 08 */
+    body .egg-trigger.hidden-trigger.egg-find {
+        width: 56px;
+        height: 56px;
+    }
+    body .egg-trigger.egg-find.hidden-trigger > span {
+        width: 20px;
+        height: 20px;
+    }
+    body .hidden-trigger.egg-trigger.egg-find::before {
+        inset: -5px;
+    }
+
+    /* egg 09 (hati): dikembalikan ke ukuran kecil semula (tombol 36px, ikon 13px, cincin 26px) */
+    body .egg-trigger.hidden-note-secret.egg-find {
+        width: 36px;
+        height: 36px;
+    }
+    body .egg-trigger.egg-find.hidden-note-secret > span {
+        width: 13px;
+        height: 13px;
+    }
+    body .egg-find.hidden-note-secret.egg-trigger:not(.ambient-star):not(.egg-name):not(.egg-find-card):not(.breathing-core):not(.hidden-trigger)::after {
+        width: 26px;
+        height: 26px;
+        margin: -13px 0 0 -13px;
+    }
+
+    body .hidden-note-content .hidden-note-secret,
+    body .hidden-note-content .hidden-note-secret:hover,
+    body .hidden-note-content .hidden-note-secret:focus-visible {
+        margin-left: 100px; /* titik tengah hati = 118px di kanan tengah layar */
+        margin-top: -120px;
+    }
+}
+@media (max-width: 359px) {
+    /* layar sangat sempit: hati lebih dekat ke tengah supaya tidak keluar layar */
+    body .hidden-note-content .hidden-note-secret,
+    body .hidden-note-content .hidden-note-secret:hover,
+    body .hidden-note-content .hidden-note-secret:focus-visible {
+        margin-left: 76px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+    /* egg 08 sedikit lebih besar lagi di tablet */
+    body .egg-trigger.hidden-trigger.egg-find {
+        width: 64px;
+        height: 64px;
+    }
+    body .egg-trigger.egg-find.hidden-trigger > span {
+        width: 24px;
+        height: 24px;
+    }
+    /* egg 09 di tablet: sama kecilnya dengan di HP */
+    body .egg-trigger.hidden-note-secret.egg-find {
+        width: 36px;
+        height: 36px;
+    }
+    body .egg-trigger.egg-find.hidden-note-secret > span {
+        width: 13px;
+        height: 13px;
+    }
+    body .egg-find.hidden-note-secret.egg-trigger:not(.ambient-star):not(.egg-name):not(.egg-find-card):not(.breathing-core):not(.hidden-trigger)::after {
+        width: 26px;
+        height: 26px;
+        margin: -13px 0 0 -13px;
+    }
+    body .hidden-note-content .hidden-note-secret,
+    body .hidden-note-content .hidden-note-secret:hover,
+    body .hidden-note-content .hidden-note-secret:focus-visible {
+        margin-left: 158px; /* titik tengah hati = 176px di kanan tengah layar */
+        margin-top: -124px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1100px) {
+    body .hidden-note-content .hidden-note-secret,
+    body .hidden-note-content .hidden-note-secret:hover,
+    body .hidden-note-content .hidden-note-secret:focus-visible {
+        margin-left: 172px;
+    }
+}
+
+@media (max-width: 1100px) {
+    :root {
+        --r13-whisper: 12.5px; /* "Psst, ada 11 hal kecil..." */
+        --r13-footer: 8.5px; /* "ditulis di antara..." + "GESER PELAN..." */
+        --r13-micro: 8.5px; /* label kapital kecil lain */
+    }
+}
+/* HP, termasuk HP yang diputar miring (layar pendek) */
+@media (max-width: 700px), (max-width: 1100px) and (max-height: 520px) {
+    :root {
+        --r13-whisper: 11.5px;
+        --r13-footer: 8px;
+        --r13-micro: 8px;
+    }
+}
+
+@media (max-width: 1100px) {
+    body #landing .landing-whisper {
+        font-size: var(--r13-whisper);
+        line-height: 1.6;
+    }
+    body #landing .landing-footer,
+    body #landing .landing-footer > span,
+    body #landing .landing-footer .scroll-indicator {
+        font-size: var(--r13-footer);
+        letter-spacing: 0.07em;
+        line-height: 1.7;
+    }
+    body #pause .pause-signature small,
+    body #hidden-note .hidden-note-footer small,
+    body #ending .credits small {
+        font-size: var(--r13-micro);
+        letter-spacing: 0.12em;
+        line-height: 1.7;
+    }
+    /* garis kiri-kanan di "sepetak kecil milikmu" adalah span kosong, jadi hanya span tengah yang diubah */
+    body #canvas-section .canvas-intro-mark > span:nth-child(2) {
+        font-size: var(--r13-micro);
+        letter-spacing: 0.12em;
+    }
+}
+
+@media (max-width: 1100px) {
+    body #pause .breathing-core.egg-trigger.egg-find {
+        width: 76px;
+        height: 76px;
+        min-width: 76px;
+        min-height: 76px;
+    }
+    body #pause .breathing-core > .egg-orb {
+        width: 26px;
+        height: 26px;
+        margin: -13px 0 0 -13px;
+        box-shadow: 0 0 15px 4px rgba(255, 226, 170, 0.7), 0 0 40px 11px rgba(255, 200, 110, 0.28);
+    }
+    body #pause .breathing-core.egg-trigger.egg-find:not(.egg-name):not(.ambient-star):not(.egg-find-card)::after {
+        inset: -3px;
+    }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+    body #pause .breathing-core.egg-trigger.egg-find {
+        width: 88px;
+        height: 88px;
+        min-width: 88px;
+        min-height: 88px;
+    }
+    body #pause .breathing-core > .egg-orb {
+        width: 30px;
+        height: 30px;
+        margin: -15px 0 0 -15px;
+        box-shadow: 0 0 17px 5px rgba(255, 226, 170, 0.7), 0 0 46px 13px rgba(255, 200, 110, 0.28);
+    }
+}
+
+@media (min-width: 1101px) {
+    :root {
+        --r14-footer-gap: 56px; /* jarak tulisan ke tepi layar (bingkai ada di 22px) */
+    }
+    body #landing .landing-footer {
+        left: var(--r14-footer-gap);
+        right: var(--r14-footer-gap);
+        width: auto;
+        transform: none; /* sebelumnya translateX(-50%) untuk menengahkan */
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1100px) {
+    :root {
+        --r15-egg-small: 10.5px;
+        --r15-egg-small-final: 9.5px;
+    }
+    body #eggOverlay #eggCard .egg-small {
+        font-size: var(--r15-egg-small);
+        letter-spacing: 0.09em;
+        line-height: 1.7;
+    }
+    body #eggOverlay #eggCard.is-final .egg-small {
+        font-size: var(--r15-egg-small-final);
+    }
+}
+/* HP, termasuk HP yang diputar miring (layar pendek) */
+@media (max-width: 700px), (max-width: 1100px) and (max-height: 520px) {
+    :root {
+        --r15-egg-small: 9.5px;
+        --r15-egg-small-final: 9px;
+    }
+    body #eggOverlay #eggCard .egg-small {
+        letter-spacing: 0.08em;
+    }
+}
+/* HP sangat kecil */
+@media (max-width: 360px) {
+    :root {
+        --r15-egg-small: 9px;
+        --r15-egg-small-final: 8.5px;
+    }
+}
